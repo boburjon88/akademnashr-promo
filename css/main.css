@@ -3,19 +3,38 @@ body {
     line-height: 1.5;
     font-family: "Roboto", "Arial",sans-serif;
     letter-spacing: 0.5px;
-
+    
 
 }
 
 
 .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-between;
+    
     background-color: #fff;
 
 }
+.logo-link {
+    transition: opacity 0.4s ease;
+}
+.logo-link:hover {
+    opacity: 0.8;
+}
+.logo-link:active {
+    opacity: 0.6;
+}
+.site-header-action {
+    display: flex;
+    align-items: center;
+}
 .sitenav-list {
     list-style: none;
+    display: flex;
 }
-.sitenav-linkl {
+.sitenav-link {
     font-weight: 500;
     font-size: 13px;
     line-height: 15px;
@@ -23,6 +42,15 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000;
+    transition: color 0.4s ease;
+    opacity: 0.4s ease;
+}
+.sitenav-link:hover {
+    color: #ff7500;
+
+}
+.sitenav-link:active {
+    opacity: 0.6;
 }
 .main-link {
     font-size: 13px;
@@ -30,9 +58,20 @@ body {
     color: #fff;
     background-color: #FF7500;
     text-decoration: none;
+    transition: opacity 0.4s ease;
 
 }
+.main-link:hover {
+    opacity: 0.8;
+
+}
+.main-link:active {
+    opacity: 0.6;
+}
 .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
  background-color: #252420;
  color: #fff;
 }
@@ -64,6 +103,11 @@ background-color: #FF7500;
     font-family: "Roboto condensed","Roboto","Arial",sans-serif;
     letter-spacing: 0.5px;
 }
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
 .feature {
     width: 340px;
 }
@@ -80,6 +124,9 @@ background-color: #FF7500;
 }
 
 .promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #252420;
     color: #fff;
 }
@@ -103,13 +150,25 @@ background-color: #FF7500;
 .site-footer {
     background-color: #f8f8f8;
 }
+.site-footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .site-footer ul {
     list-style: none;
+}
+.socials {
+    display: flex;
+    align-items: center;
 }
 .site-footer-divider {
     height: 2px;
     background-color: rgba(37, 36, 32, 0.5);
 }
+.site-footer-bottom {
+    display: flex;
+} 
 .site-footer-links {
     width: 224px;
     line-height: 19px;
@@ -120,3 +179,9 @@ background-color: #FF7500;
     color: #252420;
 }
 
+.site-footer-links a:hover {
+    color: #ff7500;
+}
+.site-footer-links a:focus {
+    opacity:0.6 ;
+}
