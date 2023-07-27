@@ -17,9 +17,10 @@ body {
     align-items: center;
     justify-content: space-between;
     justify-content: space-between;
-    
+    border-top: 5px solid #ff7500;
     background-color: #fff;
-
+    padding-bottom: 16px;
+    padding-top: 16px;
 }
 .logo-link {
     transition: opacity 0.4s ease;
@@ -37,6 +38,7 @@ body {
 .sitenav-list {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 .sitenav-link {
     font-weight: 500;
@@ -57,6 +59,13 @@ body {
     opacity: 0.6;
 }
 .main-link {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 4px;
+    font-weight: bold;
     font-size: 13px;
     line-height: 15px;
     color: #fff;
@@ -74,6 +83,8 @@ body {
 }
 .hero {
     display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
     justify-content: space-between;
     align-items: center;
  background-color: #252420;
@@ -83,6 +94,7 @@ body {
     width: 390px;
 }
 .hero-img {
+    border-radius: 8px;
     width: 510px;
     height: 510px;
 }
@@ -97,6 +109,12 @@ body {
     width: 80px;
 height: 3px;
 background-color: #FF7500;
+border: 0;
+
+}
+.features {
+    padding-top: 210px;
+    padding-bottom: 210px;
 
 }
 
@@ -111,11 +129,16 @@ background-color: #FF7500;
     display: flex;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 .feature {
     width: 340px;
 }
 .feature-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     background-color: rgba(255, 117, 0, 0.2);
@@ -133,6 +156,10 @@ background-color: #FF7500;
     align-items: center;
     background-color: #252420;
     color: #fff;
+    border-radius: 12px;
+    /*padding-top: 120px;
+    padding-bottom: 160px;*/
+
 }
 .promo-content {
     width: 440px;
@@ -147,11 +174,14 @@ background-color: #FF7500;
     color:#FF7500;
 }
 .promo-img {
+    border-radius: 12px;
     width: 440px;
     height: 440px;
     object-fit: cover;
 }
 .site-footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
     background-color: #f8f8f8;
 }
 .site-footer-top {
@@ -160,9 +190,11 @@ background-color: #FF7500;
     justify-content: space-between;
 }
 .site-footer ul {
+    padding: 0;
     list-style: none;
 }
 .site-footer-socials {
+    padding: 0;
     display: flex;
     align-items: center;
 }
@@ -173,6 +205,7 @@ background-color: #FF7500;
     color: #ff7500;
 }
 .site-footer-divider {
+    border: 0;
     height: 2px;
     background-color: rgba(37, 36, 32, 0.5);
 }
